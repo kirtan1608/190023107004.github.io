@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Development Task-3</title>
+</head>
+
+<body style="background-color: rgb(138, 185, 255);">
+    <h1>
+    Click On Different Button And get Some Awesome Results.
+                
+    </h1>
+
+    <h2 style="color: rgb(92, 57, 250);">JavaScript Light Project</h2>
+    
+        <img id="defult" src="img/defult.png" width="300px" height="300px" >
+        <p style="float:center;">
+            <button style="padding: auto; border: 2px solid black; margin-left: 15px; background-color: rgb(59, 59, 236); width: 5%;" type="button" onclick="myfunction(1)">Blue</button>
+            <button style="padding: auto; border: 2px solid black; background-color: rgb(240, 92, 92); width: 5%;" type="button" onclick="myfunction(2)">Red</button>
+            <button style="padding: auto; border: 2px solid black; background-color: rgb(57, 245, 88); width: 5%;" type="button" onclick="myfunction(3)">Green</button>
+            <button style="padding: auto; border: 2px solid black; background-color: rgb(252, 248, 29); width: 5%;"type="button" onclick="myfunction(4)">Yellow</button>
+        </p>
+ 
+
+
+    <script>
+        function myfunction(sw) {
+            var pic;
+            if (sw == 1) {
+                pic = "img/blue.png"
+            }
+            if (sw == 2) {
+                pic = "img/red.png"
+            }
+            if (sw == 3) {
+                pic = "img/green.png"
+            }
+            if (sw == 4) {
+                pic = "img/yellow.png"
+            }
+            document.getElementById('defult').src = pic;
+        }
+    </script>
+</body>
+
+</html>
